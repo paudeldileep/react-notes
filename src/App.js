@@ -1,23 +1,18 @@
-import logo from './logo.svg';
+
 import './App.css';
+import NoteBox from './components/Notes/NoteBox';
+import NotesList from './components/Notes/NotesList';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="App w-full min-h-screen bg-gray-300">
+      <div className="h-14"></div>
+      <div className="box bg-gray-100 mt-10 pb-6">
+       <NoteBox/>
+       </div>
+       <div className="box bg-gray-200 mt-4">
+       <NotesList/>
+       </div>
     </div>
   );
 }
